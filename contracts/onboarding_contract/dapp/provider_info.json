@@ -1,0 +1,15 @@
+[
+ {
+  "storage": "100 GB SSD",
+  "memory": "16 GB RAM",
+  "os": "Ubuntu 22.02 LTS",
+  "core": "8",
+  "gpu": "NVIDIA H600X",
+  "region": "us-west-1",
+  "platformName": "AWS",
+  "platformImageUri": "http://image.com/image.jpg",
+  "processor": "Intel i9-1300LS",
+  "providerDid": "bafymdi1234",
+  "hostingCost": "5"
+ }
+]
