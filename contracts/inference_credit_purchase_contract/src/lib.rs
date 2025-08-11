@@ -51,7 +51,7 @@ pub struct AddCredits {
 }
 
 #[contract_fn]
-pub fn add_credits(add_credit_req: AddCredits) -> Result<String, WasmError> {
+pub fn add_credit(add_credit_req: AddCredits) -> Result<String, WasmError> {
     // Call the do_add_credit API with the provided user DID and credit count
 
     let add_credit_result = call_do_add_credit_api(add_credit_req.user_did.clone(), CREDIT_COUNT);
