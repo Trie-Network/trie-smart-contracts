@@ -17,6 +17,7 @@ pub struct PurchaseCreditReq {
 
     pub user_did: String,
     pub depin_provider: String,
+    pub current_timestamp: u64
 }
 
 #[contract_fn]
@@ -46,6 +47,7 @@ pub fn purchase_credit(req: PurchaseCreditReq) -> Result<String, WasmError> {
 pub struct AddCredits {
     // Write fields related to FT Transfer
     pub user_did: String,
+    pub current_timestamp: u64
 }
 
 #[contract_fn]
