@@ -17,6 +17,7 @@ pub struct PurchaseCreditReq {
 
     pub user_did: String,
     pub depin_provider: String,
+    pub current_timestamp: u64
 }
 
 #[contract_fn]
@@ -46,10 +47,11 @@ pub fn purchase_credit(req: PurchaseCreditReq) -> Result<String, WasmError> {
 pub struct AddCredits {
     // Write fields related to FT Transfer
     pub user_did: String,
+    pub current_timestamp: u64
 }
 
 #[contract_fn]
-pub fn add_credits(add_credit_req: AddCredits) -> Result<String, WasmError> {
+pub fn add_credit(add_credit_req: AddCredits) -> Result<String, WasmError> {
     // Call the do_add_credit API with the provided user DID and credit count
 
     let add_credit_result = call_do_add_credit_api(add_credit_req.user_did.clone(), CREDIT_COUNT);
