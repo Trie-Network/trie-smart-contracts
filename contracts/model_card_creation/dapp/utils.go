@@ -31,7 +31,7 @@ type SmartContractDataResponse struct {
 	SCTDataReply  []SmartContractDataReply `json:"SCTDataReply"`
 }
 
-const MODEL_CARD_CONTRACT_HASH = "Qm"
+const MODEL_CARD_CONTRACT_HASH = "QmeywD5LVUpZ1TiirMtAR8YyAb3suLdEUETJxkKwhUWHW8"
 
 func FetchModelCardsFromChain() ([]Asset, error) {
 	reqBody := SmartContractDataRequest{
